@@ -9,9 +9,9 @@ public class book {
     private String ISBN;
     private String title;
     private int year;
-    private String Author[] authors;
+    private autor[] authors;
 
-    public book(String ISBN, String title, int year, Author[] authors) {
+    public book(String ISBN, String title, int year, autor[] authors) {
         this.ISBN = ISBN;
         this.title = title;
         this.year = year;
@@ -20,16 +20,41 @@ public class book {
 
     public boolean hasAuthor(String nif) {
         for (var author: authors)
-        if (author.getNif().equals(nif)) {
+        if (author.getNIF().equals(nif)) {
             return true;
         }
-        return true;
+        return false;
     }
 
     public String getISBN() {
-        return ISBN;}
+        return ISBN;
+    }
+
+    public void setISBN(String ISBN) {
+        this.ISBN = ISBN;
+    }
+
     public String getTitle() {
-        return title;}
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public int getYear() {
-        return year;}
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public autor[] getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(autor[] authors) {
+        this.authors = authors;
+    }
 }
