@@ -1,13 +1,11 @@
 package org.ies.library.model;
 
-import java.util.Scanner;
-
-public class autor {
+public class Autor {
     private String NIF;
     private String name;
     private String surname;
 
-    public autor(String NIF, String name, String surname) {
+    public Autor(String NIF, String name, String surname) {
         this.NIF = NIF;
         this.name = name;
         this.surname = surname;

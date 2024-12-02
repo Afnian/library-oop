@@ -1,4 +1,4 @@
 package org.ies.library.component;
 
-public class bookReader {
+public class LibraryReader {
 }
